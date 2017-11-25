@@ -1,0 +1,27 @@
+https://git-scm.com/book/en/v2/Getting-Started-Git-Basics
+
+Git thinks of its data more like a series of snapshots of a miniature
+filesystem. With Git, every time you commit, or save the state of your
+project, Git basically takes a picture of what all your files look like
+at that moment and stores a reference to that snapshot. To be efficient,
+if files have not changed, Git doesn’t store the file again, just a link
+to the previous identical file it has already stored. Git thinks about
+its data more like a stream of snapshots.
+
+Git has three main states that your files can reside in: committed, modified,
+and staged:
+   * Committed means that the data is safely stored in your local database.
+   * Modified means that you have changed the file but have not committed
+     it to your database yet.
+   * Staged means that you have marked a modified file in its current version
+     to go into your next commit snapshot.
+
+To check out means that you take any given commit from the repository and
+re-create the state of the associated file and directory tree in the working
+directory.
+
+The purpose of Git is to manage a project, or a set of files, as they change
+over time. Git stores this information in a data structure called a repository.
+A git repository contains, among other things, the following: A set of commit
+objects.
+
